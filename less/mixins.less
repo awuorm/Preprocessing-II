@@ -10,6 +10,27 @@
     color:white;
 
 }
-    .btn {
+.btn {
         .buttonMixins();
+}
+.headerMixins(){
+    animation-name: anime;
+    animation-duration: 5s;
+    animation-timing-function: ease-in-out;
+    animation-delay: 2s;
+    animation-iteration-count: infinite;
+   @keyframes anime {
+       from{
+           font-size: 1.5em;
+       }
+       to{
+           font-size: 3em;
+       }
+       
+   }
+
+}
+
+h1,h2,h3,h4,h5  {
+    .headerMixins();
 }

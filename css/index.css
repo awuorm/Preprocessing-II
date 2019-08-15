@@ -8,6 +8,25 @@
   border-radius: 0.4em;
   color: white;
 }
+h1,
+h2,
+h3,
+h4,
+h5 {
+  animation-name: anime;
+  animation-duration: 5s;
+  animation-timing-function: ease-in-out;
+  animation-delay: 2s;
+  animation-iteration-count: infinite;
+}
+@keyframes anime {
+  from {
+    font-size: 1.5em;
+  }
+  to {
+    font-size: 3em;
+  }
+}
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)

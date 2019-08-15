@@ -1,1 +1,21 @@
 // Navigation Styles here
+//variables
+@navTextColor: black;
+
+//Mixins
+.myFlexDefaults(@justify,@align){
+    display: flex;
+    justify-content: @justify;
+    align-items: @align;
+}
+nav{
+    .myFlexDefaults(space-around,center);
+
+        a {
+            text-decoration: none;
+            color: @navTextColor;
+            padding:0.5em;
+            margin:0.3em;
+            font-size: 1.5em;
+        }
+}

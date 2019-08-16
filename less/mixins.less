@@ -1,1 +1,36 @@
 // Mixins in here
+.buttonMixins(){
+    background-color: teal;
+    margin:0.3em;
+    padding:0.6em;
+    border:0.1em solid clear;
+    text-align: center;
+    width:45%;
+    border-radius:0.4em;
+    color:white;
+
+}
+.btn {
+        .buttonMixins();
+}
+.headerMixins(){
+    animation-name: anime;
+    animation-duration: 5s;
+    animation-timing-function: ease-in-out;
+    animation-delay: 2s;
+    animation-iteration-count: infinite;
+   @keyframes anime {
+       from{
+           font-size: 1.5em;
+       }
+       to{
+           font-size: 3em;
+       }
+       
+   }
+
+}
+
+h1,h2,h3,h4,h5  {
+    .headerMixins();
+}

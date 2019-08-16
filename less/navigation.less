@@ -1,1 +1,35 @@
 // Navigation Styles here
+//variables
+@navTextColor: black;
+
+//Mixins
+.myFlexDefaults(@justify,@align){
+    display: flex;
+    justify-content: @justify;
+    align-items: @align;
+}
+nav{
+    .myFlexDefaults(space-around,center);
+    //mobile view    
+    @media @mobile{
+            flex-direction: column;
+    }
+        
+        a {
+            text-decoration: none;
+            color: @navTextColor;
+            padding:0.5em;
+            margin:0.3em;
+            font-size: 1.5em;
+    
+            
+
+
+}
+}
+
+hr{
+    margin: 0;
+    padding:0;
+    border-top:0.2em dashed grey;
+}
